@@ -1,0 +1,14 @@
+dbt_project_superstore_dataset:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ft79608.west-us-2.azure
+      warehouse: compute_wh
+      database: analytics
+      schema: dbt_project_superstore
+      role: accountadmin
+      authenticator: snowflake
+      user: badmaev
+      password: Aaa_123654
+      threads: 1
